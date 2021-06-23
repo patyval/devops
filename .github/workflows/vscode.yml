@@ -28,7 +28,7 @@ jobs:
           location=southcentralus
           plan=plan-devops-sura-pvaldezo1-dev
           app=app-devops-sura-vscode-pvaldezo1-dev
-          sku=P1V2
+          sku=S1
           image=bencdr/code-server-azure
           repo=https://github.com/patyval/devops.git
           az configure --defaults group=$group location=$location
