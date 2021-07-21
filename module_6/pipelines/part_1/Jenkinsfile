@@ -36,7 +36,7 @@ pipeline {
                     sh '''                    
                     
                     npx sonar-scanner \
-                    -Dsonar.host.url=http://vm-devops-sura-sonarqube-pvaldezo1-dev.southcentralus.cloudapp.azure.com/ \                    
+                    -Dsonar.host.url=http://vm-devops-sura-sonarqube-pvaldezo1-dev.southcentralus.cloudapp.azure.com/ \
                     -Dsonar.login=$ToA \
                     -Dsonar.sources=./fe-devops-sura-pvaldezo1-dev \
                     -Dsonar.exclusions=./fe-devops-sura-pvaldezo1-dev/node_modules \
