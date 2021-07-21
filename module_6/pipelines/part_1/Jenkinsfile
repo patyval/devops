@@ -27,10 +27,7 @@ pipeline {
                 }
             }
         }
-    stage('SCM') {
-        checkout scm
-        }
-    stage('SonarQube Analysis') {
+        stage('SonarQube Analysis') {
           steps {
                 nodejs(nodeJSInstallationName: 'Node 12.22.3') {
                     sh '''                    
@@ -46,7 +43,7 @@ pipeline {
                  }
             }
         }
-     stage('Build') { 
+        stage('Build') { 
             steps {
                 // 
                 echo 'Building'
@@ -55,7 +52,7 @@ pipeline {
                 }
             }
         }
-      stage('Test') { 
+        stage('Test') { 
             steps {
                 // 
                 echo 'Testing'
@@ -65,7 +62,7 @@ pipeline {
                 }
             }
         }
-      stage('Delivery') { 
+        stage('Delivery') { 
             steps {
                 // 
                 echo 'Delivery'
@@ -84,7 +81,7 @@ EOF'''
                 }
             }
         }
-      stage('Deploy') { 
+        stage('Deploy') { 
             steps {
                 // 
                 echo 'Deploying'
