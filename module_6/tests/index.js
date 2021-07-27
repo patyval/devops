@@ -1,4 +1,9 @@
-function plus(n1,n2){
-  return n1 + n2;
+function plus(num1, num2){
+    return num1 + num2;
 }
-module.exports = plus;
+
+function minus(num1, num2){
+    return num1 - num2;
+}
+
+module.exports = {plus, minus};
