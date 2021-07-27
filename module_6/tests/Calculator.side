@@ -1,0 +1,72 @@
+{
+  "id": "80233ff4-95bd-4013-a026-44b2635924ff",
+  "version": "2.0",
+  "name": "Calculator",
+  "url": "https://www.meta-calculator.com",
+  "tests": [{
+    "id": "194a212b-9614-4eba-9f2b-c643a9d8688f",
+    "name": "2mas2",
+    "commands": [{
+      "id": "766636c2-33b6-4928-9837-2f0b5bfbcf12",
+      "comment": "",
+      "command": "open",
+      "target": "/scientific-calculator.php?panel-201-calculator",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef5e2766-fe5d-4dff-8b36-dbba93ab754a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6 > .calc > .mcbtn > .btn2",
+      "targets": [
+        ["css=.col-md-6 > .calc > .mcbtn > .btn2", "css:finder"],
+        ["xpath=//div[@id='original-scientific-keyboard']/div/div/div[17]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[17]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a797b7e3-45e5-429c-83ae-e814cb17b507",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calc > .mtext > .btnPlus",
+      "targets": [
+        ["css=.calc > .mtext > .btnPlus", "css:finder"],
+        ["xpath=//div[@id='original-scientific-keyboard']/div/div/div[24]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[24]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7647fb30-934b-43f9-8039-3140ed34fa40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6 > .calc > .mcbtn > .btn2",
+      "targets": [
+        ["css=.col-md-6 > .calc > .mcbtn > .btn2", "css:finder"],
+        ["xpath=//div[@id='original-scientific-keyboard']/div/div/div[17]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[17]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8c34ad7-5822-4bcd-8351-2c8e8b77b625",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6 > .calc > .mcbtn > .btnEquals",
+      "targets": [
+        ["css=.col-md-6 > .calc > .mcbtn > .btnEquals", "css:finder"],
+        ["xpath=//div[@id='original-scientific-keyboard']/div/div/div[11]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[11]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d4333cfd-8c37-4579-9c34-f528cb554529",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["194a212b-9614-4eba-9f2b-c643a9d8688f"]
+  }],
+  "urls": ["https://www.meta-calculator.com/"],
+  "plugins": []
+}
