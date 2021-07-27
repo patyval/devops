@@ -28,7 +28,7 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                nodejs(nodeJSInstallationName: 'Node 12.22.3') {
+                nodejs(nodeJSInstallationName: 'Node 12.22.3') { 
                     sh '''
                     npx sonar-scanner \
                     -Dsonar.host.url=http://vm-devops-sura-sonarqube-pvaldezo1-dev.southcentralus.cloudapp.azure.com/ \
